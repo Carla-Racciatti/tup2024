@@ -6,6 +6,9 @@ public class Persona {
     private long dni;
     private LocalDate fechaNacimiento;
 
+    //agrego direccion y telefono
+
+
     public String getNombre() {
         return nombre;
     }

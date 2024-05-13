@@ -1,4 +1,4 @@
-package InputProcessors;
+package inputProcessors;
 import entidades.Banco;
 import entidades.Cliente;
 
@@ -24,15 +24,15 @@ public class MenuInputProcessor extends BaseInputProcessor{
             scanner.nextLine();
 
             switch (choice) {
- //           case 1:
-   //             Cliente c = clienteInputProcessor.ingresarCliente();
-     //           banco.getClientes().add(c);
-       //         break;
+            case 1:
+                Cliente c = clienteInputProcessor.ingresarCliente();
+                banco.getClientes().add(c);
+                break;
 //            case 2:
-//                createAccount();
+//                crearCuenta();
 //                break;
 //            case 3:
-//                performTransaction();
+//                hacerTransaccion();
 //                break;
                 case 4:
                     exit = true;
