@@ -4,14 +4,44 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>src.ar.edu.utn.frbb.tup</groupId>
     <artifactId>Tp2Carla</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
+    <properties> <!-- defino las propiedades de compilación del proyecto -->
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <build> <!-- defino la configuración del plugin maven-jar-plugin
+    para asegurarme de que el archivo JAR generado tenga un MANIFEST.MF correctamente configurado con mi clase principal-->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <!-- ruta a mi clase principal -->
+                            <mainClass>principal.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
+
+        <!-- Para empaquetar mi proyecto en un jar:
+          * OP 1   View > Tool Windows > Maven > click en botón "Lifecycle" > seleccionar "package".
+                   el archivo JAR se generará en la carpeta target de tu proyecto.
+
+                   Si realizo cambios en el código, repetir lo mencionado arriba para empaquetar el proyecto nuevamente.
+                    IntelliJ IDEA sobrescribirá el JAR existente con la nueva versión en la carpeta target.
+
+          * OP 2 en la terminal ejecutar: mvn package
+         -->
