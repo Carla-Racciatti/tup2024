@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>src.ar.edu.utn.frbb.tup</groupId>
+    <groupId>Tp2Carla.src.main.java.ar.edu.utn.frbb.tup</groupId>
     <artifactId>Tp2Carla</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -26,7 +26,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- ruta a mi clase principal -->
-                            <mainClass>principal.Main</mainClass>
+                            <mainClass>ar.edu.utn.frbb.tup.principal.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

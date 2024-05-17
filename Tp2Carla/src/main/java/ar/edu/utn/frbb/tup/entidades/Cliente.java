@@ -1,5 +1,44 @@
-package entidades;
+package ar.edu.utn.frbb.tup.entidades;
 
+import java.time.LocalDate;
+
+public class Cliente extends Persona {
+    //el resto de los atributos los hereda de la clase Persona.
+    private int id;
+
+
+    // Constructor
+    public Cliente(int id, String nombre, String apellido, String direccion, String telefono, long dni, LocalDate fechaNacimiento) {
+        super(nombre, apellido, direccion, telefono, dni, fechaNacimiento);
+        this.id = id;
+    }
+
+    // Getter y Setter para el atributo id
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    // Método toString que incluye el id
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", dni=" + dni +
+                ", fechaNacimiento=" + fechaNacimiento +
+                '}';
+    }
+}
+
+
+/*
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
@@ -54,3 +93,4 @@ public class Cliente extends Persona{
     }
 }
 
+*/

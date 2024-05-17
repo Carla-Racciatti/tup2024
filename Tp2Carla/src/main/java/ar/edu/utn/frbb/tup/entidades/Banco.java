@@ -1,4 +1,5 @@
-package entidades;
+package ar.edu.utn.frbb.tup.entidades;
+/*
 import entidades.Cliente;
 import inputProcessors.ClienteInputProcessor;
 
@@ -43,3 +44,4 @@ public class Banco {
 
 }
 
+*/

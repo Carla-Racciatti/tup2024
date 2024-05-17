@@ -1,5 +1,5 @@
-package entidades;
-
+package ar.edu.utn.frbb.tup.entidades;
+/*
 public enum TipoPersona {
 
     PERSONA_FISICA("F"),
@@ -24,4 +24,4 @@ public enum TipoPersona {
         throw new IllegalArgumentException("No se pudo encontrar un TipoPersona con la descripción: " + text);
     }
 }
-
+*/
